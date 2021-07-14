@@ -1,0 +1,630 @@
+/* import fonts from fonts.css file */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .max-width{
+    max-width: 1440px;
+    padding: 0;
+    margin: auto;
+} */
+
+/* start header css style */
+.main-header{
+    background: #2D25A0;
+    max-width: 1440px;
+    height: 677px;
+    position: relative;
+}
+
+.top-header{
+    width: 1163px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 42px auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.top-header .menu .nav-bar .nav-item{
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0 36px 0 0;
+}
+.top-header .menu .nav-bar .nav-item a{ 
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+.top-header .login{
+    background: #E02C6D;
+    width: 123px;
+    height: 44px;
+    cursor: pointer;
+}
+.top-header .login .btn{
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+.top-header .login .btn img{
+    height: 18px;
+    width: 18px;
+    padding-top: 5px;
+}
+.top-header .login .btn span{
+    height: 43px;
+    width: 24px;
+}
+.top-header .login:hover{
+    background: none;
+    border: 1px solid red;
+}
+.banner-area{
+    width: 1163px;
+    display: flex;
+    margin: 49px auto;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-area .banner-text .text{
+    width: 80%;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+    color: white;
+    
+}
+.banner-area .banner-text:hover{
+    transform: translate(50px);
+    transition: transform 1s ease;
+    
+}
+.banner-area .banner-img img{
+    height: 428px;
+    object-fit: cover;
+}
+.banner-area .banner-img img:hover{
+    transform: translate(-50px);
+    transition: transform 1s ease;
+}
+.banner-area .banner-text .btn-watch{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: #E02C6D;
+    height: 44px;
+    width: 168px;
+    display: inline-block;
+    text-align: center;
+    margin: 27px 0;
+    cursor: pointer;
+}
+.banner-area .banner-text .btn-watch .btn-watch-1{
+    margin: 10px auto;
+}
+.banner-area .banner-text .btn-watch .btn-watch-1:hover{
+    color: black;
+}
+
+
+/* End header css style */
+
+
+/* start players css style  */
+
+.players{
+    width: 1050px;
+    background: #f5f5f5;
+    margin: 70px auto;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background: #fff;
+    box-shadow: 2px 5px 12px 4px #c5c5c5;
+}
+.player .player-info img{
+    width: 300px;
+    height: 256px;
+    object-fit: cover;
+    margin: 15px
+}
+
+.player .player-info .details .name{
+    font: 28px;
+    font-weight: 700;
+    color: rgba(24, 25, 31, 1);
+    margin: 0 10px 15px 15px;
+}
+.player .player-info .details .about{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(108, 108, 108, 1);
+    line-height: 26px;
+    margin: 10px 15px 33px 15px;
+}
+
+/* End players css style  */
+
+/* Start Highlights css style */
+
+.highlights-area{
+    width: 1102px;
+    display: flex;
+    align-items: center;
+    margin: 160px auto;
+}
+
+.highlights-area .highlights-text .text1{
+    width: 100%;
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+.highlights-area .highlights-text .copaa{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(108, 108, 108, 1);
+    line-height: 28px;
+    margin: 8px 24px 0px 0px;
+}
+.highlights-area .highlights-img img{
+    width: 567px;
+    height: 427px;
+    object-fit: cover;
+    margin-left: 66px;
+}
+.highlights-area .highlights-text .highlights-btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: #E02C6D;
+    height: 44px;
+    width: 168px;
+    display: inline-block;
+    text-align: center;
+    margin: 27px 0;
+    cursor: pointer;
+}
+.highlights-area .highlights-text .highlights-btn .watch-2{
+    margin: 10px auto;
+}
+.highlights-area .highlights-text .highlights-btn .watch-2:hover{
+    color: black;
+}
+
+/* End Highlights css style  */
+
+/* Start footer css style  */
+.bottom-footer{
+    height: 213px;
+    width: 484px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.bottom-footer .f-logo img{
+    width: 484px;
+    height: 110px;
+}
+
+.bottom-footer .social{
+    margin: 20px auto;
+}
+
+.bottom-footer .social img{
+    width: 32px;
+    height: 32px;
+    margin: 0 14px 0 0;
+    margin-bottom: 10px;
+}
+.bottom-footer .social img:nth-last-child(1){
+    margin-right: 0;
+}
+.bottom-footer .copyrigth{
+    margin: 0px auto;
+    padding-bottom: 63px;
+}
+.bottom-footer .copyright p{
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+
+/* End footer css style  */
+
+/* About final 2021 Area css style  */
+
+.final{
+    height: 213px;
+    width: 484px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 144px;
+}
+.final h1{
+    font-size: 35px;
+    line-height: 44px;
+    text-align: center;
+    margin: 20px 16px;
+    background: #fff0dc;
+    border: 5px solid rebeccapurple;
+    padding: 12px;
+}
+.final span{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
+.final .result{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.final hr{
+    color: crimson;
+    border-bottom: 1px solid;
+}
+
+/* About final 2021 Area css style  */
+
+/* Subcribe Area css style  */
+
+.subs{
+    width: 1440px;
+    background: rgb(220 231 255);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.subs p{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 34px 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.subs input{
+    width: 800px;
+    width: 800px;
+    height: 37px;
+    border: 0;
+}
+.subs input::placeholder{
+    font-size: 15px;
+    padding: 7px;
+    margin-right: 10px;
+    color: royalblue;
+}
+
+.subs .submit{
+    cursor: pointer;
+    margin: 20px;
+    background: azure;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+/* if the viewport is equal to 480px or less than that */ 
+@media only screen and (max-width: 480px){
+    .top-header{
+    display: none;
+    }
+    .banner-area{
+    width: 100%;
+    display: flex;
+    margin: 16px 16px;
+    flex-direction: column;
+    }
+    .banner-area .banner-text .text{
+    width: 80%;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 47px;
+    color: white;
+    }
+    .banner-area .banner-img img{
+    width: 329px;
+    height: 259px;
+    object-fit: cover;
+    margin: 44px auto;
+    }
+    /* End header css style */
+
+
+    /* start players css style  */
+
+    .players{
+        width: 360px;
+        background: #f5f5f5;
+        margin: 47px auto;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    .player .player-info img{
+        width: 300px;
+        height: 256px;
+        object-fit: cover;
+        margin: 15px
+    }
+    
+    .player .player-info .details .name{
+        font: 28px;
+        font-weight: 700;
+        color: rgba(24, 25, 31, 1);
+        margin: 0 10px 15px 15px;
+    }
+    .player .player-info .details .about{
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(108, 108, 108, 1);
+        line-height: 26px;
+        margin: 10px 15px 33px 15px;
+    }
+    /* End players css style  */
+
+/* Start Highlights css style */
+
+.highlights-area{
+    width: 330px;
+    display: flex;
+    align-items: center;
+    margin: 160px auto;
+    flex-direction: column;
+}
+
+
+.highlights-area .highlights-text .text1{
+    width: 100%;
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+
+}
+.highlights-area .highlights-text .copaa{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(108, 108, 108, 1);
+    line-height: 28px;
+    margin: 8px 24px 0px 0px;
+}
+.highlights-area .highlights-img img{
+    width: 328px;
+    height: 248px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+
+/* End Highlights css style  */
+
+/* Start footer css style  */
+.bottom-footer{
+    height: 203px;
+    width: 484px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.bottom-footer .f-logo img{
+    width: 271px;
+    height: 63px;
+}
+
+.bottom-footer .social{
+    margin: 20px auto;
+}
+
+.bottom-footer .social img{
+    width: 17px;
+    height: 17px;
+    margin: 0 7px 0 0;
+    margin-bottom: 5px;
+}
+.bottom-footer .social img:nth-last-child(1){
+    margin-right: 0;
+}
+.bottom-footer .copyrigth{
+    margin: 0px auto;
+    padding-bottom: 24px;
+}
+.bottom-footer .copyright p{
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+
+/* End footer css style  */
+
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 768px){
+        .top-header{
+        display: none;
+        }
+        .banner-area{
+        width: 100%;
+        display: flex;
+        margin: 16px 16px;
+        flex-direction: column;
+        }
+        .banner-area .banner-text .text{
+        width: 80%;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 47px;
+        color: white;
+        }
+        .banner-area .banner-img img{
+        width: 329px;
+        height: 259px;
+        object-fit: cover;
+        margin: 44px auto;
+        }
+        /* End header css style */
+    
+    
+        /* start players css style  */
+    
+        .players{
+            width: 90%;
+            background: #f5f5f5;
+            margin: 19px auto;
+            margin-bottom: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .player{
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+        .player .player-info{
+            width: 100%;
+        }
+        .player .player-info img{
+            width: 300px;
+            height: 256px;
+            object-fit: cover;
+            margin: 15px
+        }
+        
+        .player .player-info .details .name{
+            font: 28px;
+            font-weight: 700;
+            color: rgba(24, 25, 31, 1);
+            margin: 0 10px 15px 15px;
+        }
+        .player .player-info .details .about{
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(108, 108, 108, 1);
+            line-height: 26px;
+            margin: 10px 15px 33px 15px;
+        }
+        /* End players css style  */
+    
+    /* Start Highlights css style */
+    
+    .highlights-area{
+        width: 700px;
+    display: flex;
+    align-items: center;
+    margin: 160px auto;
+    flex-direction: column;
+    }
+    
+    
+    .highlights-area .highlights-text .text1{
+        width: 100%;
+        color: #0A0826;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+    
+    }
+    .highlights-area .highlights-text .copaa{
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(108, 108, 108, 1);
+        line-height: 28px;
+        margin: 8px 24px 0px 0px;
+    }
+    .highlights-area .highlights-img img{
+        width: 409px;
+    height: 275px;
+    /* object-fit: cover; */
+    margin: 48px;
+    margin-bottom: 5px;
+    }
+    
+    
+    /* End Highlights css style  */
+    
+    /* Start footer css style  */
+    .bottom-footer{
+        height: 303px;
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .bottom-footer .f-logo img{
+        width: 371px;
+        height: 163px;
+    }
+    
+    .bottom-footer .social{
+        margin: 20px auto;
+    }
+    
+    .bottom-footer .social img{
+        width: 27px;
+        height: 27px;
+        margin: 0 7px 0 0;
+        margin-bottom: 5px;
+    }
+    .bottom-footer .social img:nth-last-child(1){
+        margin-right: 0;
+    }
+    .bottom-footer .copyrigth{
+        margin: 0px auto;
+        padding-bottom: 24px;
+    }
+    .bottom-footer .copyright p{
+        font-size: 28px;
+        line-height: 34px;
+        color: black;
+    }
+    
+    /* End footer css style  */
+    
+    
+}
